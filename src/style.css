@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    color: rgb(122, 122, 122);
+    text-align: center;
+    padding: 10px 0;
+}
+h1 {
+    text-align: center;
+    color: rgb(122, 122, 122);
+}
+a {
+    color: rgb(33, 220, 241);
+    text-decoration: none;
+}
