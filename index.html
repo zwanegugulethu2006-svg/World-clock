@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
-<h1>World Clock</h1>
-<footer>
-  <p>
-    Coded with ❤️ by 
-    <a href="https://www.instagram.com/iiam.mazikodee/" target="_blank">
-      Gugulethu
-    </a>.
-  </p>
 
-  <p>
-    Open-sourced on
-    <a href="https://github.com/zwanegugulethu2006-svg/World-clock" target="_blank">
-      GitHub
-    </a>
-    and hosted on
-    <a href="https://lethuworldclock.netlify.app/" target="_blank">
-      Netlify
-    </a>.
-  </p>
-</footer>
+  <header class="hero">
+    <h1>World Clock</h1>
+    <p>Elegant time across the world</p>
+  </header>
 
-    <script src="src/script.js"></script>
+  <section class="main">
+    <img src="src/clock-removebg-preview.png" alt="Clock" id="clock">
+
+
+    <select id="city-select">
+  <option value="">Select a city</option>
+  <option value="current">Current Location 📍</option>
+  <option value="Europe/London">London 🇬🇧</option>
+  <option value="America/New_York">New York 🇺🇸</option>
+  <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+  <option value="Australia/Sydney">Sydney 🇦🇺</option>
+</select>
+  <footer class="footer">
+    <p>
+      Coded with <span>❤️</span> by
+      <a href="https://www.instagram.com/iiam.mazikodee/" target="_blank">
+        Gugulethu
+      </a>
+    </p>
+
+    <p>
+      Open-sourced on
+      <a href="https://github.com/zwanegugulethu2006-svg/World-clock" target="_blank">
+        GitHub
+      </a>
+      and hosted on
+      <a href="https://lethuworldclock.netlify.app/" target="_blank">
+        Netlify
+      </a>.
+    </p>
+  </footer>
+
+  <script src="src/script.js"></script>
+
 </body>
 </html>
