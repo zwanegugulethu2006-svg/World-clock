@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>World Clock</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/style.css">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="src/style.css" />
 </head>
-
 <body>
-
-  <header class="hero">
-    <h1>World Clock</h1>
-    <p>Elegant time across the world</p>
-  </header>
-
   <section class="main">
-    <img src="src/clock-removebg-preview.png" alt="Clock" id="clock">
+    <h1 id="title">World Clock</h1>
 
+    <img
+      src="src/clock-removebg-preview.png"
+      alt="Clock"
+      id="clock"
+    />
 
     <select id="city-select">
-  <option value="">Select a city</option>
-  <option value="current">Current Location 📍</option>
-  <option value="Europe/London">London 🇬🇧</option>
-  <option value="America/New_York">New York 🇺🇸</option>
-  <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
-  <option value="Australia/Sydney">Sydney 🇦🇺</option>
-</select>
-  <footer class="footer">
+      <option value="">Select a city</option>
+      <option value="current">Current Location 📍</option>
+      <option value="Europe/London">London 🇬🇧</option>
+      <option value="America/New_York">New York 🇺🇸</option>
+      <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+      <option value="Australia/Sydney">Sydney 🇦🇺</option>
+    </select>
+
+    <div id="city-output"></div>
+  </section>
+
+  <footer id="footer">
     <p>
-      Coded with <span>❤️</span> by
+      Coded with ❤️ by
       <a href="https://www.instagram.com/iiam.mazikodee/" target="_blank">
         Gugulethu
       </a>
@@ -43,11 +49,10 @@
       and hosted on
       <a href="https://lethuworldclock.netlify.app/" target="_blank">
         Netlify
-      </a>.
+      </a>
     </p>
   </footer>
 
   <script src="src/script.js"></script>
-
 </body>
 </html>

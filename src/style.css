@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff, #e0f2fe);
+  color: #2d2d2d;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#title {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  color: #5b21b6;
+  margin-bottom: 20px;
+}
+
+#clock {
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+}
+
+#city-select {
+  width: 100%;
+  max-width: 320px;
+  padding: 16px;
+  border: none;
+  border-radius: 18px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(147, 197, 253, 0.25);
+  color: #4338ca;
+  outline: none;
+}
+
+#city-output {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #5b21b6;
+  font-family: 'Playfair Display', serif;
+  min-height: 50px;
+}
+
+#footer {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+#footer a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  #title {
+    font-size: 42px;
+  }
+
+  #clock {
+    width: 120px;
+  }
+
+  #city-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #title {
+    font-size: 32px;
+  }
+
+  #city-output {
+    font-size: 22px;
+  }
+}
+/* 🌫 Smooth fade-in page load */
+body {
+  animation: pageFade 1s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🖼 Clock soft floating animation */
+#clock {
+  animation: floatClock 4s ease-in-out infinite;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+#clock:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 12px 20px rgba(124, 58, 237, 0.18));
+}
+
+@keyframes floatClock {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* 💎 Glass dropdown premium hover */
+#city-select {
+  transition: all 0.35s ease;
+}
+
+#city-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(147, 197, 253, 0.25);
+}
+
+#city-select:focus {
+  transform: scale(1.01);
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.2);
+}
+
+/* ✍️ Smooth typed city output */
+#city-output {
+  transition: all 0.4s ease;
+  animation: revealText 0.7s ease;
+}
+
+@keyframes revealText {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    letter-spacing: 6px;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 2px;
+  }
+}
+
+/* 🔗 Footer smooth link hover */
+#footer a {
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+#title {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  color: #5b21b6;
+}
+
+#city-select,
+#city-output {
+  font-family: 'Inter', sans-serif;
+}
