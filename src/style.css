@@ -177,3 +177,31 @@ body {
 #city-output {
   font-family: 'Inter', sans-serif;
 }
+#city-output {
+  margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #5b21b6;
+  min-height: 120px;
+}
+
+/* ✨ premium typing/reveal */
+.typing-effect {
+  animation: premiumReveal 0.8s ease;
+}
+
+@keyframes premiumReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+    letter-spacing: 4px;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 1px;
+    filter: blur(0);
+  }
+}
